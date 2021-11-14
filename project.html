@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+<head>
+<script type="text/javascript" src="project.js"> 
+		
+</script>	
+<script src=plotly-latest.min.js></script>	
+<link   rel="stylesheet" type="text/css" href="project.css">
+</head>
+<body>
+	<form action="#">
+		<div id="fullpage">
+		
+		<h2>This form is used to collect the students information like their name, school name and degree they are pursuing</h2>
+		
+		First Name :  
+		<input id="FirstN" type="text" onblur="check1();"/> <span id="message1"></span><br>
+		
+		<br>Last  Name :
+		<input id="LastN" type="text" onblur="check2();"/> <span id="message2"></span><br>
+		
+		<br>School Name :
+		<input id="Occu" type="text" onblur="check3();"/> <span id="message3"></span><br>
+		
+		<br>Degree:<br>
+		<input type="radio" name="degree" value="Masters" checked>Master<br>
+		<input type="radio" name="degree" value="Bachleors" >Bachleors<br>
+		<input type="radio" name="degree" value="Diploma" >Diploma<br>
+		
+		<br>Age:     
+		<input id="age" type="number" onblur="check4();"/><span id="message4"></span><br>
+		
+		<br>Interests:<br>
+		<input type="checkbox" name="Field" value="Data Science">Data Science<br>
+		<input type="checkbox" name="Field" value="Web Developer" >Web Developer<br>
+		<input type="checkbox" name="Field" value="Full Stack Devlopment" >Full Stack Devlopment<br>
+		
+		
+		<br>Date of Birth :
+		<input id="DOB" type="Date" onclick="pareto()"/>
+		
+	</form>
+</body>
+</html>
